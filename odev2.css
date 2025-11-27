@@ -1,0 +1,79 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;/*içeriğin dikey ve yatay olarak ortalanması*/
+    height: 100vh;
+    background-color: #f8f9fa;
+}
+.header{
+    display: flex;/*üst kısmın flexbox ile düzenlenmesi*/
+    flex-direction: column;/*üst kısmın dikey olarak hizalanması*/
+    align-items: center;
+    margin-bottom: 20px;
+}
+.logo img{
+    width: 272px;
+    height: auto;
+}
+.search-bar{
+    position: relative;/*ikonun inputun içinde olmasını sağlar*/
+    width: 500px;
+    margin-top: 20px;
+}
+.search-bar input{
+    width: 500px;
+    padding: 10px 15px ;
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    box-shadow: none;
+    outline: none;/*inputun etrafındaki mavi kenarlığı kaldırır*/
+    
+}
+.search-bar input:focus{
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
+    border-color: rgba(223, 225, 229, 0);
+
+}   
+.buttons{
+    margin-top: 20px;
+}
+.buttons button{
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;/*butonların köşelerinin yuvarlatılması*/
+    color: #3c4043;
+    font-size: 14px;
+    margin: 0 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.buttons button:hover{
+    box-shadow: 0 1px 3px rgba(60, 64,  67, 0.3);
+    background-color: #f1f3f4;
+}   
+.search-bar i{
+    
+    position: absolute;/*ikonun inputun içinde olmasını sağlar*/
+    right: 12px;/*ikonun inputun sağında olmasını sağlar*/
+    padding: 4px  ;/*ikonun etrafında boşluk bırakır*/
+    margin-right: 15px;/*ikonun sağında boşluk bırakır*/
+    margin-top: 12px;/*ikonun üstünde boşluk bırakır*/
+    font-size: 18px;/*ikonun boyutunu ayarlar*/
+    color: #9aa0a6;
+    cursor: pointer;/*ikonun üzerine gelindiğinde imleç değişir*/
+    
+
+   
+
+}
+.search-bar i:focus{
+    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);/*ikonun üzerine tıklandığında gölge efekti ekler*/
+    border-color: rgba(223, 225, 229, 0);}/*ikonun üzerine tıklandığında kenarlık rengini değiştirir*/
